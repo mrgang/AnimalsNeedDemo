@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE38A7C31BE7552A0070242F /* circle.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38A7C21BE7552A0070242F /* circle.png */; };
+		CE38A7C51BE7552E0070242F /* wave.png in Resources */ = {isa = PBXBuildFile; fileRef = CE38A7C41BE7552E0070242F /* wave.png */; };
 		CE91D6381BE70F5200C907CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91D6371BE70F5200C907CD /* AppDelegate.swift */; };
 		CE91D63A1BE70F5200C907CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE91D6391BE70F5200C907CD /* ViewController.swift */; };
 		CE91D63D1BE70F5200C907CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE91D63B1BE70F5200C907CD /* Main.storyboard */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE38A7C21BE7552A0070242F /* circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = circle.png; sourceTree = "<group>"; };
+		CE38A7C41BE7552E0070242F /* wave.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wave.png; sourceTree = "<group>"; };
 		CE91D6341BE70F5200C907CD /* AnimalsNeedDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimalsNeedDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE91D6371BE70F5200C907CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE91D6391BE70F5200C907CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,8 +64,10 @@
 			children = (
 				CE91D6371BE70F5200C907CD /* AppDelegate.swift */,
 				CE91D6391BE70F5200C907CD /* ViewController.swift */,
+				CE38A7C21BE7552A0070242F /* circle.png */,
 				CE91D6491BE7109F00C907CD /* WavesView.swift */,
 				CE91D64B1BE710BD00C907CD /* CircleView.swift */,
+				CE38A7C41BE7552E0070242F /* wave.png */,
 				CE91D63B1BE70F5200C907CD /* Main.storyboard */,
 				CE91D63E1BE70F5200C907CD /* Assets.xcassets */,
 				CE91D6401BE70F5200C907CD /* LaunchScreen.storyboard */,
@@ -129,8 +135,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE91D6421BE70F5200C907CD /* LaunchScreen.storyboard in Resources */,
+				CE38A7C51BE7552E0070242F /* wave.png in Resources */,
 				CE91D63F1BE70F5200C907CD /* Assets.xcassets in Resources */,
 				CE91D63D1BE70F5200C907CD /* Main.storyboard in Resources */,
+				CE38A7C31BE7552A0070242F /* circle.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,6 +300,7 @@
 				CE91D6481BE70F5200C907CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
