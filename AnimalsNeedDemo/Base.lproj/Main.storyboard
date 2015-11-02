@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="FNq-h5-MRI">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--我的动画-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalsNeedDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,127 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qZV-YH-34v">
+                                <rect key="frame" x="285" y="72" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="表盘"/>
+                                <connections>
+                                    <segue destination="fW3-V6-3UD" kind="show" id="z8P-t5-hBY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aa6-um-utB">
+                                <rect key="frame" x="285" y="110" width="30" height="30"/>
+                                <animations/>
+                                <state key="normal" title="波浪"/>
+                                <connections>
+                                    <segue destination="JTN-nT-WlL" kind="show" id="a18-ri-z5a"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="aa6-um-utB" firstAttribute="top" secondItem="qZV-YH-34v" secondAttribute="bottom" constant="8" id="2Qv-Or-71o"/>
+                            <constraint firstItem="qZV-YH-34v" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Yic-xp-UGs"/>
+                            <constraint firstItem="aa6-um-utB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cYC-s1-sFD"/>
+                            <constraint firstItem="qZV-YH-34v" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zG3-Y4-NVM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="我的动画" id="ffx-Zb-gcb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1127" y="419"/>
+        </scene>
+        <!--表盘-->
+        <scene sceneID="aMf-XW-Ykf">
+            <objects>
+                <viewController id="fW3-V6-3UD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Yv2-g9-c9k"/>
+                        <viewControllerLayoutGuide type="bottom" id="CHa-Zl-aPj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aW9-75-nWC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cK3-Nl-0sf" customClass="CircleView" customModule="AnimalsNeedDemo" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.72504754449999997" blue="0.42082680919999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="rmq-mL-KZK"/>
+                                    <constraint firstAttribute="width" constant="300" id="s7t-wt-R5D"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cK3-Nl-0sf" firstAttribute="centerY" secondItem="aW9-75-nWC" secondAttribute="centerY" id="HS1-Ke-Mah"/>
+                            <constraint firstItem="cK3-Nl-0sf" firstAttribute="centerX" secondItem="aW9-75-nWC" secondAttribute="centerX" id="N4k-pG-c03"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="表盘" id="yFb-KV-rbv"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wIc-4S-2XR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="78"/>
+        </scene>
+        <!--波浪-->
+        <scene sceneID="P36-1E-lAR">
+            <objects>
+                <viewController id="JTN-nT-WlL" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9a1-qF-gli"/>
+                        <viewControllerLayoutGuide type="bottom" id="gJm-FP-FHL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qof-Pl-ib9">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uc-mI-V1P" customClass="WavesView" customModule="AnimalsNeedDemo" customModuleProvider="target">
+                                <rect key="frame" x="150" y="150" width="300" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="uFw-ql-tZv"/>
+                                    <constraint firstAttribute="height" constant="300" id="uqK-xJ-ydi"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1uc-mI-V1P" firstAttribute="centerX" secondItem="Qof-Pl-ib9" secondAttribute="centerX" id="Iea-KH-zaN"/>
+                            <constraint firstItem="1uc-mI-V1P" firstAttribute="centerY" secondItem="Qof-Pl-ib9" secondAttribute="centerY" id="ikU-pB-2pp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="波浪" id="hrv-nh-v3f"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbO-tv-ctC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1861" y="752"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dks-B7-sNB">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FNq-h5-MRI" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gZj-kH-6z2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z9O-ty-qip"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RfW-hX-JNY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="315" y="419"/>
         </scene>
     </scenes>
 </document>

@@ -12,7 +12,9 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        navigationController?.navigationBar.tintColor = UIColor.whiteColor()
+        navigationController?.navigationBar.barTintColor = UIColor.blueColor()
+        navigationController?.navigationBar.barStyle = UIBarStyle.BlackTranslucent
     }
 
     override func didReceiveMemoryWarning() {
